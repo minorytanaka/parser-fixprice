@@ -1,3 +1,29 @@
+
+# Настройки для CategorySpider
+ALLOWED_DOMAINS = ["fix-price.com", "api.fix-price.com"]
+CATEGORIES = [
+    "https://fix-price.com/catalog/kosmetika-i-gigiena/ukhod-za-polostyu-rta",
+    "https://fix-price.com/catalog/produkty-i-napitki/zakuski",
+    "https://fix-price.com/catalog/igrushki",
+]
+BASE_URL_CLIENT = "https://fix-price.com/"
+BASE_URL_API = "https://api.fix-price.com/buyer/v1/product/in/"
+PARAMS = {
+    "page": 1,
+    "limit": 24,
+    "sort": "sold",
+}
+HEADERS = {
+    "x-city": 809,
+    "x-language": "ru",
+}
+
+
+
+
+
+
+
 # Scrapy settings for fixprice project
 #
 # For simplicity, this file contains only settings considered important or
